@@ -1,0 +1,19 @@
+body { 
+    margin-left : 150px;
+    margin-right : 150px;
+    background-color:rgb(255, 228, 236);
+    color :rgb(110, 28, 28) 
+}
+
+p { 
+    text-align :justify
+}
+
+.formatheader {
+    font-size:larger;
+    font-weight:bold;
+}
+
+.roundedimage {
+    border-radius: 10px;
+}
