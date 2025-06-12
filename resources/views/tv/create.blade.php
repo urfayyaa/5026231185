@@ -3,7 +3,7 @@
 @section('content')
 <h3>Tambah Data TV</h3>
 
-<a href="/tv">Kembali</a>
+<a href="/tv" class="btn btn-secondary">Kembali</a>
 
 <br />
 <br />
