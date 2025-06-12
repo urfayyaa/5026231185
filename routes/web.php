@@ -5,6 +5,8 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\TvController;
+
 //import java.io ;
 
 /*
@@ -87,5 +89,14 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+//route TV
+Route::get('/tv', [TvController::class, 'index']);
+Route::get('/tv/tambah', [TvController::class, 'tambah']);
+Route::post('/tv/store', [TvController::class, 'store']);
+Route::get('/tv/{id}/edit', [TvController::class, 'edit']); // ✅ diperbaiki
+Route::post('/tv/update', [TvController::class, 'update']);      // ✅ diperbaiki
+Route::get('/tv/{id}', [TvController::class, 'hapus']);   // ✅ supaya sesuai form delete
+Route::get('/tv/cari', [TvController::class, 'cari']);
+
