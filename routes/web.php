@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\TvController;
 use App\Http\Controllers\CounterController;
+use App\Http\Controllers\KaryawanController;
 
 //import java.io ;
 
@@ -96,9 +97,17 @@ Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
 Route::get('/tv', [TvController::class, 'index']);
 Route::get('/tv/tambah', [TvController::class, 'tambah']);
 Route::post('/tv/store', [TvController::class, 'store']);
-Route::get('/tv/{id}/edit', [TvController::class, 'edit']);
-Route::put('/tv/{id}', [TvController::class, 'update']);
-Route::delete('/tv/{id}', [TvController::class, 'hapus']); // ✅ pakai method delete, nama fungsi destroy
+Route::get('/tv/edit/{id}', [TvController::class, 'edit']);
+Route::put('/tv/update', [TvController::class, 'update']);
+Route::get('/tv/hapus/{id}', [TvController::class, 'hapus']);
 Route::get('/tv/cari', [TvController::class, 'cari']);
 
+// route Counter
 Route::get('/counter', [CounterController::class, 'index']);
+
+//route Karyawan
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::get('/karyawan/delete/{kodepegawai}', [KaryawanController::class, 'delete']);
+Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);

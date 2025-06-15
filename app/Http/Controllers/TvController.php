@@ -17,7 +17,7 @@ class TvController extends Controller
     // Menampilkan form tambah TV
     public function tambah()
     {
-        return view('tv.create');
+        return view('tv.tambah');
     }
 
     // Menyimpan data TV baru
@@ -25,13 +25,15 @@ class TvController extends Controller
     {
         DB::table('tv')->insert([
             'merkTV' => $request->merkTV,
-            'hargaTV' => $request->hargaTV,
+            'hargaTV' => strtoupper ($request->hargaTV),
             'tersedia' => $request->tersedia,
             'berat' => $request->berat
         ]);
 
         return redirect('/tv');
     }
+
+
 
     // Menampilkan form edit TV berdasarkan ID
     public function edit($id)

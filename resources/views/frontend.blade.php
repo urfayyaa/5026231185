@@ -1,3 +1,6 @@
+@extends('templateBootstrap')
+
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,56 +9,63 @@
   <title>My Links</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      color: white;
+      background: linear-gradient(to right, #111a33, #20305b, #2d427c);
+      color: #fff;
       font-family: 'Poppins', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 20px;
+      padding: 40px 20px;
     }
 
     .container {
-      width: 100%;
-      max-width: 360px;
-      padding: 30px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 30px;
+      background-color: rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
 
     h1 {
-      margin-bottom: 20px;
-      font-size: 28px;
+      font-size: 36px;
       font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .link-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
     }
 
     .link-button {
-      display: block;
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 14px 20px;
-      margin: 12px 0;
-      border: 1px solid transparent;
-      border-radius: 12px;
-      text-decoration: none;
+      display: inline-block;
+      background: linear-gradient(135deg, #f2a2a6, #f6bdbd);
       color: #fff;
+      padding: 14px 24px;
+      border-radius: 14px;
+      text-decoration: none;
       font-weight: 500;
-      transition: all 0.3s ease;
+      min-width: 180px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
 
     .link-button:hover {
-      background-color: #f2a2a6;
-      transform: scale(1.05);
-      border-color: #aaa;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 26px;
+      }
+      .link-button {
+        min-width: 140px;
+        font-size: 14px;
+        padding: 12px 18px;
+      }
     }
   </style>
 </head>
@@ -74,3 +84,4 @@
   </div>
 </body>
 </html>
+@endsection

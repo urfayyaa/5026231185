@@ -34,13 +34,9 @@
                 <td>{{ $t->tersedia }}</td>
                 <td>{{ $t->berat }} kg</td>
                 <td>
-                    <a href="/tv/{{ $t->tv_id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                    <a href="/tv/edit/{{ $t->tv_id }}" class="btn btn-warning btn-sm">Edit</a>
                     |
-                    <form action="/tv/{{ $t->tv_id }}" method="POST" style="display:inline">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Yakin mau hapus?')">Hapus</button>
-                    </form>
+                    <a href="/tv/hapus/{{ $t->tv_id }}" class="btn btn-danger btn-sm">Hapus</a>
                 </td>
             </tr>
         @endforeach
