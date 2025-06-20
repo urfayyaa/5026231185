@@ -25,7 +25,7 @@
             {
                 var nrp = document.getElementById("nrp").value;
                 var nama = document.getElementById("nama").value;
-            
+
             // cek nomor
             if(isNaN(nrp))
             {

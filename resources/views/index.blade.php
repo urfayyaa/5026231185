@@ -13,7 +13,6 @@
 	</form>
 
     <br />
-
     <table class="table table-striped">
         <tr>
             <th>Nama</th>

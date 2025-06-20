@@ -25,7 +25,7 @@
 
         /* Styling for the header */
         .header {
-            background-color: #2d437e; /* Blue background color */
+            background-color: #f2a2a6; /* Blue background color */
             color: white; /* White text color */
             text-align: center;
             padding: 20px 0;
@@ -91,14 +91,14 @@
         }
 
         .pagination .page-item .page-link {
-        color: #2d437e;
+        color: #f2a2a6;
         border-radius: 8px;
         margin: 0 3px;
         transition: 0.2s;
     }
     .pagination .page-item.active .page-link {
         background-color: #2d437e;
-        border-color: #2d437e;
+        border-color: #f2a2a6;
         color:white ;
     }
 

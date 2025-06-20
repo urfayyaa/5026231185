@@ -45,7 +45,6 @@ class KaryawanController extends Controller
  public function cari(Request $request)
 {
     $cari = $request->cari;
-
     $karyawan = DB::table('karyawan')
         ->where('namalengkap', 'like', "%{$cari}%")
         ->orWhere('divisi',      'like', "%{$cari}%")
