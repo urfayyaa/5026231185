@@ -25,7 +25,7 @@
 
         /* Styling for the header */
         .header {
-            background-color: #f2a2a6; /* Blue background color */
+            background-color: #2d437e; /* Blue background color */
             color: white; /* White text color */
             text-align: center;
             padding: 20px 0;
@@ -60,7 +60,7 @@
         }
 
         .navbar-nav .nav-link:hover {
-            color: #f2a2a6;
+            color: #2d437e;
             text-decoration: underline;
         }
 
@@ -91,14 +91,14 @@
         }
 
         .pagination .page-item .page-link {
-        color: #f2a2a6;
+        color: #2d437e;
         border-radius: 8px;
         margin: 0 3px;
         transition: 0.2s;
     }
     .pagination .page-item.active .page-link {
         background-color: #2d437e;
-        border-color: #f2a2a6;
+        border-color: #2d437e;
         color:white ;
     }
 

@@ -4,7 +4,7 @@
 <div class="container mt-4">
     <h3>Edit Data My Karyawan</h3>
 
-    <form action="/eas/{{ $mykaryawan->kodepegawai }}/update" method="POST">
+    <form action="/mykaryawan/{{ $mykaryawan->kodepegawai }}/update" method="POST">
         @csrf
         <div class="row mb-3">
             <label for="namalengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
