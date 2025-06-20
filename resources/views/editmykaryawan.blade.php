@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-sm-6 offset-sm-2">
                 <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                <a href="/eas" class="btn btn-secondary">Kembali</a>
+                <a href="/mykaryawan" class="btn btn-secondary">Kembali</a>
             </div>
         </div>
     </form>
