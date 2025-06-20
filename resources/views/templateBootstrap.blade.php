@@ -99,7 +99,7 @@
     .pagination .page-item.active .page-link {
         background-color: #2d437e;
         border-color: #f2a2a6;
-        color: white;
+        color: #f2a2a6;
     }
 
     </style>

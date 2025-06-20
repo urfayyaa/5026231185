@@ -25,7 +25,7 @@
                 <td>
                     <a href="/eas/edit/{{ $data->kodepegawai }}" class="btn btn-warning btn-sm">Edit</a>
                     |
-                    <a href="/eas/view/{{ $data->kodepegawai }}" class="btn btn-info btn-sm">View</a>
+                    <a href="/mykaryawan/view/{{ $data->kodepegawai }}" class="btn btn-info btn-sm">View</a>
                 </td>
             </tr>
             @empty
