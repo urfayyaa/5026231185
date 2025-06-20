@@ -4,6 +4,8 @@
 
 <h3>Data Karyawan</h3>
 
+<a href="/karyawan/tambah" class="btn btn-primary btn-sm"> + Tambah Karyawan Baru</a>
+
 <!-- Form Pencarian -->
 <form action="{{ url('/karyawan/cari') }}" method="GET" class="mt-3">
     <label class="form-label"><strong>Cari Data Karyawan:</strong></label>
@@ -61,7 +63,6 @@
     <!-- Tombol Tambah Data -->
     <a href="{{ url('/karyawan/tambah') }}" class="btn btn-info">+ Tambah Data</a>
     <!-- Pagination (akan mempertahankan ?cari=...) -->
-    {{ $karyawan->links() }}
 </div>
 
 @endsection

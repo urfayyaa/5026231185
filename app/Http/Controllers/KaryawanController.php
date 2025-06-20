@@ -11,7 +11,7 @@ class KaryawanController extends Controller
     public function index()
     {
         // Mengambil data seluruh karyawan
-        $karyawan = DB::table('karyawan')->paginate(10);  // Menggunakan pagination untuk 10 data per halaman
+        $karyawan = DB::table('karyawan')->get();  // Menggunakan pagination untuk 10 data per halaman
         return view('indexkaryawan', ['karyawan' => $karyawan]);
     }
 

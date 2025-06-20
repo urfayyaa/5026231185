@@ -35,7 +35,7 @@
         }
 
         .header span {
-            color: #2d437e; /* Yellow color for "Kode Pegawai" */
+            color: #2d437e;
         }
 
         .navbar {
@@ -53,14 +53,14 @@
         .navbar-nav .nav-link {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #555;
+            color: #f2a2a6;
             transition: all 0.3s ease;
             display: flex;
             align-items: center; /* Aligns icons and text */
         }
 
         .navbar-nav .nav-link:hover {
-            color: #007bff;
+            color: #f2a2a6;
             text-decoration: underline;
         }
 
@@ -85,7 +85,23 @@
                 margin-left: 0;
                 margin-bottom: 10px;
             }
+            .navbar-nav .nav-link {
+                justify-content: center;
+            }
         }
+
+        .pagination .page-item .page-link {
+        color: #f2a2a6;
+        border-radius: 8px;
+        margin: 0 3px;
+        transition: 0.2s;
+    }
+    .pagination .page-item.active .page-link {
+        background-color: #2d437e;
+        border-color: #f2a2a6;
+        color: white;
+    }
+
     </style>
 </head>
 
@@ -96,30 +112,36 @@
         <span>5026231185</span> - Jannati Urfa Muhayat
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-light mx-4 py-3">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/frontend"><i class="fas fa-code"></i> All Front End</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pegawai"><i class="fas fa-users"></i> Pegawai</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/tv"><i class="fas fa-cogs"></i> Tugas CRUD</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-book"></i> EAS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/counter"><i class="fas fa-chalkboard-teacher"></i> Latihan 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/karyawan"><i class="fas fa-chalkboard-teacher"></i> Latihan 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Latihan 3</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/frontend"><i class="fas fa-code"></i> All Front End</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pegawai"><i class="fas fa-users"></i> Pegawai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tv"><i class="fas fa-cogs"></i> Tugas CRUD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mykaryawan"><i class="fas fa-book"></i> EAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/counter"><i class="fas fa-chalkboard-teacher"></i> Latihan 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/karyawan"><i class="fas fa-chalkboard-teacher"></i> Latihan 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Latihan 3</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container">

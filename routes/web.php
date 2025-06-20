@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\TvController;
 use App\Http\Controllers\CounterController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\MyKaryawanController;
 
 //import java.io ;
 
@@ -111,3 +112,11 @@ Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
 Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 Route::get('/karyawan/delete/{kodepegawai}', [KaryawanController::class, 'delete']);
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
+
+//route MyKaryawan
+Route::get('/mykaryawan', [MyKaryawanController::class, 'index']); // tampilkan semua data
+Route::get('/mykaryawan/view/{kodepegawai}', [MyKaryawanController::class, 'view']); // lihat detail 1 data
+Route::get('/mykaryawan/edit/{kodepegawai}', [MyKaryawanController::class, 'edit']); // tampilkan form edit
+Route::post('/mykaryawan/update/{kodepegawai}', [MyKaryawanController::class, 'update']); // simpan hasil edit
+Route::get('/mykaryawan/cari', [MyKaryawanController::class, 'cari']);
+
