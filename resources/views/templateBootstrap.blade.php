@@ -129,7 +129,7 @@
                     <a class="nav-link" href="/tv"><i class="fas fa-cogs"></i> Tugas CRUD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/mykaryawan"><i class="fas fa-book"></i> EAS</a>
+                    <a class="nav-link" href="/eas"><i class="fas fa-book"></i> EAS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/counter"><i class="fas fa-chalkboard-teacher"></i> Latihan 1</a>

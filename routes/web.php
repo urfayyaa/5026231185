@@ -114,9 +114,9 @@ Route::get('/karyawan/delete/{kodepegawai}', [KaryawanController::class, 'delete
 Route::get('/karyawan/cari', [KaryawanController::class, 'cari']);
 
 //route MyKaryawan
-Route::get('/mykaryawan', [MyKaryawanController::class, 'index']); // tampilkan semua data
-Route::get('/mykaryawan/view/{kodepegawai}', [MyKaryawanController::class, 'view']); // lihat detail 1 data
-Route::get('/mykaryawan/edit/{kodepegawai}', [MyKaryawanController::class, 'edit']); // tampilkan form edit
-Route::post('/mykaryawan/update/{kodepegawai}', [MyKaryawanController::class, 'update']); // simpan hasil edit
-Route::get('/mykaryawan/cari', [MyKaryawanController::class, 'cari']);
+Route::get('/eas', [MyKaryawanController::class, 'index']); // tampilkan semua data
+Route::get('/eas/view/{kodepegawai}', [MyKaryawanController::class, 'view']); // lihat detail 1 data
+Route::get('/eas/edit/{kodepegawai}', [MyKaryawanController::class, 'edit']); // tampilkan form edit
+Route::post('/eas/update/{kodepegawai}', [MyKaryawanController::class, 'update']); // simpan hasil edit
+Route::get('/eas/cari', [MyKaryawanController::class, 'cari']);
 

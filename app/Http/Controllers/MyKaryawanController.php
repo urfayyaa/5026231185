@@ -34,7 +34,7 @@ public function update(Request $request) {
         'departemen' => $request->departemen,
     ]);
 
-    return redirect('/mykaryawan');
+    return redirect('/eas');
 }
 
 }

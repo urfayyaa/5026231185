@@ -4,7 +4,7 @@
 <div class="container mt-4">
     <h3>Edit Data My Karyawan</h3>
 
-    <form action="/mykaryawan/{{ $mykaryawan->kodepegawai }}/update" method="POST">
+    <form action="/eas/{{ $mykaryawan->kodepegawai }}/update" method="POST">
         @csrf
         <div class="row mb-3">
             <label for="namalengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-sm-6 offset-sm-2">
                 <button type="submit" class="btn btn-success">Simpan Perubahan</button>
-                <a href="/mykaryawan" class="btn btn-secondary">Kembali</a>
+                <a href="/eas" class="btn btn-secondary">Kembali</a>
             </div>
         </div>
     </form>
